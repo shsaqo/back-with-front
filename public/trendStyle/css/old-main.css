@@ -1,0 +1,911 @@
+@font-face {
+  font-family: 'trend-icons';
+  src: url("../webfonts/trend-icons.eot?p3qc9l");
+  src: url("../webfonts/trend-icons.eot?p3qc9l#iefix") format("embedded-opentype"), url("../webfonts/trend-icons.ttf?p3qc9l") format("truetype"), url("../webfonts/trend-icons.woff?p3qc9l") format("woff"), url("../webfonts/trend-icons.svg?p3qc9l#trend-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'trend-icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info:before {
+  content: "\e900";
+  color: #fff;
+}
+
+.icon-prev:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-next:before {
+  content: "\e902";
+  color: #fff;
+}
+
+.icon-hand-icon:before {
+  content: "\e904";
+  color: #fff;
+}
+
+.icon-paper-icon:before {
+  content: "\e909";
+  color: #fff;
+}
+
+.icon-phone-icon:before {
+  content: "\e90a";
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-Medium.woff2") format("woff2"), url("../fonts/NotoSansArmenian-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-Black.woff2") format("woff2"), url("../fonts/NotoSansArmenian-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-Bold.woff2") format("woff2"), url("../fonts/NotoSansArmenian-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-Regular.woff2") format("woff2"), url("../fonts/NotoSansArmenian-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-ExtraBold.woff2") format("woff2"), url("../fonts/NotoSansArmenian-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-CondensedThin.woff2") format("woff2"), url("../fonts/NotoSansArmenian-CondensedThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-SemiBold.woff2") format("woff2"), url("../fonts/NotoSansArmenian-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans Armenian", sans-serif;
+  src: url("../fonts/NotoSansArmenian-Light.woff2") format("woff2"), url("../fonts/NotoSansArmenian-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Noto Sans Armenian", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  width: 100%;
+  border: 0;
+}
+
+.page {
+  min-height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 375px;
+}
+
+main {
+  max-width: 100%;
+}
+
+.not-saled-content::after {
+  content: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0 -20px;
+}
+
+.product-price-section {
+  padding: 15px 0 25px;
+  position: relative;
+}
+
+.product-price-section .product-title h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000;
+}
+
+.product-price-section .product-content {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.product-price-section .product-content::after {
+  content: "-" attr(data-sale) "%";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F80000;
+  border-radius: 0 12px 0 25px;
+  width: 120px;
+  height: 90px;
+  font-family: "Noto Sans Armenian", sans-serif;
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.product-price-section .product-content.not-saled-content::after {
+  content: none;
+}
+
+.product-price-section .product-content .product-prices .price-item {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.product-price-section .product-content .product-prices .price-item p {
+  margin-bottom: 0;
+}
+
+.product-price-section .product-content .product-prices .price-item p.price_title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.product-price-section .product-content .product-prices .price-item p.price-money {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.product-price-section .product-content .product-prices .price-item.retail-price {
+  background-color: #fff;
+}
+
+.product-price-section .product-content .product-prices .price-item.retail-price p {
+  color: #B8B8B8;
+}
+
+.product-price-section .product-content .product-prices .price-item.saled-price {
+  background-color: #F80000;
+}
+
+.product-price-section .product-content .product-prices .price-item.saled-price p {
+  color: #fff;
+}
+
+.product-price-section .product-order button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border-radius: 33px;
+  border: none;
+  height: 66px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  background-color: #1CADF9;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.product-price-section .product-order .order-count p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #000;
+}
+
+.product-price-section .product-order .order-count p span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #1CADF9;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.product-price-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #E9E9E9;
+}
+
+.countdown-part {
+  margin-top: 30px;
+}
+
+.countdown-part.after-video-countdown {
+  margin-bottom: 30px;
+}
+
+.countdown-part .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.countdown-part .countdown div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.countdown-part .countdown div:not(:first-child) {
+  margin-left: 10px;
+}
+
+.countdown-part .countdown div:not(:first-child)::after {
+  content: ":";
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 20px;
+  left: -20px;
+  color: #000;
+  font-weight: 700;
+}
+
+.countdown-part .countdown div div {
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #F80000;
+  position: relative;
+}
+
+.countdown-part .countdown div p {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 5px;
+  color: #000;
+}
+
+.short-desc-section .produt-dotted-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.short-desc-section .produt-dotted-list li {
+  position: relative;
+  font-family: "Noto Sans Armenian", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 14px 0;
+  border-bottom: 1px dashed #D9D9D9;
+  padding-left: 18px;
+  font-weight: 700;
+}
+
+.short-desc-section .produt-dotted-list li::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #1CADF9;
+}
+
+.short-desc-section .fieldset {
+  margin-top: 30px;
+  border: 2px solid #1CADF9;
+  border-radius: 12px;
+}
+
+.short-desc-section .fieldset legend {
+  margin: auto;
+  padding: 0 5px;
+  display: unset;
+  width: unset;
+
+}
+
+.short-desc-section .fieldset legend .info-icon-parent {
+width: 48px;
+height: 48px;
+background-color: #1CADF9;
+border-radius: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.short-desc-section .fieldset legend .info-icon-parent i {
+font-size: 22px;
+}
+
+.short-desc-section .fieldset p {
+font-size: 16px;
+line-height: 21px;
+font-weight: 700;
+text-align: center;
+}
+
+.short-desc-section .video-contet {
+margin-top: 60px;
+}
+
+.long-descr-section::after {
+content: none;
+}
+
+.long-descr-section .product-content {
+margin-bottom: 0;
+}
+
+.long-descr-section .long-list-content {
+background: -webkit-gradient(linear, left bottom, left top, from(#6DD0F3), to(#75B9F4));
+background: linear-gradient(to top, #6DD0F3, #75B9F4);
+padding: 20px 0;
+}
+
+.long-descr-section .long-list-content ol.long-descr-list {
+padding: 0;
+list-style: none;
+}
+
+.long-descr-section .long-list-content ol.long-descr-list li {
+padding: 14px;
+border-bottom: 1px dashed #fff;
+font-size: 14px;
+font-family: "Noto Sans Armenian", sans-serif;
+line-height: 19px;
+font-weight: 700;
+color: #fff;
+position: relative;
+padding-left: 70px;
+}
+
+.long-descr-section .long-list-content ol.long-descr-list li .marker {
+position: absolute;
+top: 15px;
+left: 15px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+width: 34px;
+height: 34px;
+background: #fff;
+color: #000;
+font-size: 18px;
+font-weight: 700;
+border-radius: 100%;
+}
+
+.long-descr-section .long-list-content ol.long-descr-list li:last-child {
+border: none;
+padding-bottom: 0;
+}
+
+.sliders-section {
+position: relative;
+margin-top: 30px;
+padding-bottom: 47px;
+}
+
+.sliders-section .slider-parent {
+margin-bottom: 40px;
+}
+
+.sliders-section .slider-parent .slider-for img {
+height: 294px;
+-o-object-fit: cover;
+ object-fit: cover;
+}
+
+.sliders-section .slider-parent .slick-arrow.slick-next {
+z-index: 1;
+}
+
+.sliders-section .slider-parent .slick-arrow.slick-prev {
+z-index: 1;
+}
+
+.sliders-section .slider-parent .slick-slide img {
+width: 100%;
+}
+
+.sliders-section .slider-parent .thumb-slider img {
+width: 77px;
+height: 77px;
+-o-object-fit: cover;
+ object-fit: cover;
+}
+
+.sliders-section .leave-comment-btn {
+width: 100%;
+background: none;
+border: 2px solid #000;
+border-radius: 34px;
+padding: 21px 0;
+text-align: center;
+height: 66px;
+color: #000;
+font-weight: 700;
+font-size: 18px;
+font-family: "Noto Sans Armenian", sans-serif;
+}
+
+.sliders-section::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 5px;
+background-color: #E9E9E9;
+}
+
+.sliders-section .commentors-slider {
+margin-top: 50px;
+background: -webkit-gradient(linear, left top, left bottom, from(#74b8f4), color-stop(#6fbef5), color-stop(#6cc5f5), color-stop(#6bcaf4), to(#6dd0f3));
+background: linear-gradient(to bottom, #74b8f4, #6fbef5, #6cc5f5, #6bcaf4, #6dd0f3);
+padding: 0;
+padding-top: 16px;
+margin-bottom: 75px;
+padding-bottom: 35px;
+}
+
+.sliders-section .commentors-slider .commentors-section-title {
+font-size: 20px;
+font-weight: 700;
+color: #fff;
+line-height: 30px;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .slick-list {
+padding-top: 50px !important;
+padding-bottom: 50px !important;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .commentor-slider-item {
+position: relative;
+padding: 10px;
+background-color: #fff;
+border-radius: 12px;
+padding-bottom: 45px;
+z-index: 1;
+opacity: 0.5;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .commentor-slider-item.slick-current.slick-active.slick-center {
+z-index: 49;
+opacity: 1;
+-webkit-transform: scale(1.1);
+      transform: scale(1.1);
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .commentor-slider-item .commentor-name-image {
+padding-left: 20px;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .commentor-slider-item .commentor-name-image img {
+width: 70px;
+height: 70px;
+-o-object-fit: cover;
+ object-fit: cover;
+border-radius: 100%;
+margin-top: -35px;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .commentor-slider-item .commentor-name-image .commentor-name {
+margin-left: 10px;
+font-size: 14px;
+line-height: 22px;
+font-weight: 600;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .commentor-slider-item p {
+font-size: 14px;
+line-height: 22px;
+font-weight: 400;
+margin-top: 10px;
+margin-bottom: 0;
+letter-spacing: 1px;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .slick-arrow {
+top: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+margin: 0 -6px;
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .slick-prev {
+left: calc(50% - 30px);
+}
+
+.sliders-section .commentors-slider .commentor-slider-runner .slick-next {
+right: calc(50% - 30px);
+left: unset;
+}
+
+.comment-modal h5 {
+font-size: 14px;
+line-height: 19px;
+font-weight: 700;
+}
+
+.comment-modal .modal-header {
+border-bottom: none;
+}
+
+.comment-modal .modal-footer {
+border-top: none;
+}
+
+.comment-modal .modal-send-btn {
+font-size: 12px;
+line-height: 16px;
+background: -webkit-gradient(linear, left top, left bottom, from(#74b8f4), color-stop(#6fbef5), color-stop(#6cc5f5), color-stop(#6bcaf4), to(#6dd0f3));
+background: linear-gradient(to bottom, #74b8f4, #6fbef5, #6cc5f5, #6bcaf4, #6dd0f3);
+border: none;
+height: 30px;
+border-radius: 0.25rem;
+color: #fff;
+}
+
+.comment-modal .modal-form-content .modal-form .upload-image {
+background: none;
+border: none;
+font-size: 12px;
+line-height: 16px;
+height: 30px;
+background-color: rgba(128, 128, 128, 0.24);
+-webkit-box-flex: 0;
+  -ms-flex: 0 0 45%;
+      flex: 0 0 45%;
+margin-right: 5px;
+border-radius: 3px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+margin-bottom: 0;
+}
+
+.comment-modal .modal-form-content .modal-form .modal-input {
+-webkit-box-flex: 0;
+  -ms-flex: 0 0 55%;
+      flex: 0 0 55%;
+max-width: calc(55% - 5px);
+height: 30px;
+border: 0.5px solid #999999;
+border-radius: 3px;
+padding-left: 12px;
+}
+
+.comment-modal .modal-form-content .modal-form .modal-input::-webkit-input-placeholder {
+font-size: 12px;
+line-height: 16px;
+color: rgba(51, 51, 51, 0.5);
+}
+
+.comment-modal .modal-form-content .modal-form .modal-input:-ms-input-placeholder {
+font-size: 12px;
+line-height: 16px;
+color: rgba(51, 51, 51, 0.5);
+}
+
+.comment-modal .modal-form-content .modal-form .modal-input::-ms-input-placeholder {
+font-size: 12px;
+line-height: 16px;
+color: rgba(51, 51, 51, 0.5);
+}
+
+.comment-modal .modal-form-content .modal-form .modal-input::placeholder {
+font-size: 12px;
+line-height: 16px;
+color: rgba(51, 51, 51, 0.5);
+}
+
+.comment-modal .modal-form-content .modal-form textarea {
+border-radius: 3px;
+}
+
+.comment-modal .modal-form-content .modal-form .video-label-content {
+margin-top: 20px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.comment-modal .modal-form-content .modal-form .video-label-content .upload-video-img {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+width: 26px;
+height: 26px;
+background: -webkit-gradient(linear, left top, left bottom, from(#74b8f4), color-stop(#6fbef5), color-stop(#6cc5f5), color-stop(#6bcaf4), to(#6dd0f3));
+background: linear-gradient(to bottom, #74b8f4, #6fbef5, #6cc5f5, #6bcaf4, #6dd0f3);
+border-radius: 50%;
+}
+
+.comment-modal .modal-form-content .modal-form .video-label-content p {
+margin-bottom: 0;
+font-size: 12px;
+line-height: 16px;
+font-weight: 600;
+margin-left: 5px;
+}
+
+.comment-modal .modal-form-content .modal-form .text-or-video {
+font-size: 12px;
+line-height: 16px;
+font-weight: 600;
+margin: 21px 0 7px;
+}
+
+.how-to-order-section .how-to-title {
+font-size: 20px;
+font-weight: 700;
+color: #000;
+line-height: 30px;
+}
+
+.how-to-order-section .how-to-list {
+list-style: none;
+}
+
+.how-to-order-section .how-to-list li {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+padding: 15px 0;
+border-bottom: 1px dashed #DBDBDB;
+}
+
+.how-to-order-section .how-to-list li .list-icons {
+min-width: 45px;
+min-height: 45px;
+max-width: 45px;
+max-height: 45px;
+min-width: 45px;
+min-height: 45px;
+border-radius: 100%;
+font-size: 22px;
+margin-right: 15px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+background-color: #1CADF9;
+}
+
+.how-to-order-section .how-to-list li p {
+font-size: 14px;
+line-height: 19px;
+margin-bottom: 0;
+}
+
+.how-to-order-section .how-to-list li:last-child {
+border-bottom: none;
+}
+
+.number-content h4 {
+font-size: 20px;
+font-weight: 700;
+color: #000;
+line-height: 30px;
+}
+
+.number-content .call-label-input {
+margin-top: 25px;
+}
+
+.number-content .call-label-input label {
+font-size: 14px;
+line-height: 19px;
+font-weight: 400;
+font-family: "Noto Sans Armenian", sans-serif;
+color: rgba(0, 0, 0, 0.8);
+display: block;
+}
+
+.number-content .call-label-input .inputparent {
+position: relative;
+margin-bottom: 25px;
+}
+
+.number-content .call-label-input .inputparent input {
+display: block;
+height: 44px;
+width: 100%;
+padding-left: 70px;
+border: 0.5px solid #191A1F;
+border-radius: 3px;
+}
+
+.number-content .call-label-input .inputparent::before {
+content: "+374";
+position: absolute;
+left: 0;
+top: 0;
+height: 44px;
+width: 63px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+-webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+background-color: rgba(0, 0, 0, 0.14);
+}
+
+

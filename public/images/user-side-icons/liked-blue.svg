@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.411" height="16.686" viewBox="0 0 17.411 16.686">
+  <g id="like" transform="translate(0 -10.667)">
+    <g id="Group_6" data-name="Group 6" transform="translate(0 17.922)">
+      <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
+        <path id="Path_6400" data-name="Path 6400" d="M1.814,224A1.816,1.816,0,0,0,0,225.814v5.8a1.816,1.816,0,0,0,1.814,1.814H3.99a1.8,1.8,0,0,0,1.088-.367V224Z" transform="translate(0 -224)" fill="#1877f2"/>
+      </g>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(5.804 10.667)">
+      <g id="Group_7" data-name="Group 7" transform="translate(0 0)">
+        <path id="Path_6401" data-name="Path 6401" d="M182.274,20.642A1.609,1.609,0,0,0,181.8,19.5a1.8,1.8,0,0,0,.464-1.385,1.875,1.875,0,0,0-1.892-1.645h-4.481a10.431,10.431,0,0,0,.577-2.9c0-1.574-1.337-2.9-2.176-2.9a2.282,2.282,0,0,0-1.315.442.364.364,0,0,0-.136.284v2.46l-2.089,4.526-.087.044V26.2a4.753,4.753,0,0,0,1.814.429h6.659a1.669,1.669,0,0,0,1.644-1.267,1.632,1.632,0,0,0-.131-1.09,1.625,1.625,0,0,0,.726-2.177A1.624,1.624,0,0,0,182.274,20.642Z" transform="translate(-170.667 -10.667)" fill="#1877f2"/>
+      </g>
+    </g>
+  </g>
+</svg>
